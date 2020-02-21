@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import ProdcutList from "./components/ProdcutList";
+import Filter from "./components/Filter";
+import Card from "./components/Card";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { connect } from 'react-redux';
+export class App extends Component {
+	
+	render() {
+		
+		return (
+			<>
+			<div className="container bg-secondary">
+				<h1>E-commerce Shopping Cart Application</h1>
+				<hr />
+				<div className="row">
+					<div className="col-md-9">
+						<Filter />
+						<hr />
+						<ProdcutList/>
+					</div>
+					<div className="col-md-3">
+						<Card />
+					</div>
+				</div>
+			</div>
+		</>
+		)
+	}
 }
 
-export default App;
+export default (App)

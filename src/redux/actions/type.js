@@ -1,0 +1,8 @@
+export const LOAD_PRODUCTS = "LOAD_PRODUCTS";
+export const FILTER_PRODUCTS = "FILTER_PRODUCTS";
+export const FILTER_PRODUCTS_BY_SORT = "FILTER_PRODUCTS_BY_SORT";
+export const ADD_TOCART = "ADD_TOCART";
+export const REMOVE_FROM_CART = "ADD_TOCART";
+export const CLEAR_CART = "CLEAR_CART";
+
+
